@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI Kit Genérico</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">UI Kit</a>
+      <nav class="navbar-nav">
+        <a href="#typography" class="nav-link">Tipografía</a>
+        <a href="#buttons" class="nav-link">Botones</a>
+        <a href="#forms" class="nav-link">Formularios</a>
+        <a href="#components" class="nav-link">Componentes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="typography" class="component-section">
+      <h2 class="section-title">Tipografía</h2>
+      <h1>Encabezado H1</h1>
+      <h2>Encabezado H2</h2>
+      <h3>Encabezado H3</h3>
+      <p>Este es un párrafo de ejemplo. Contiene texto que sirve para mostrar el estilo del cuerpo de texto base del UI Kit.</p>
+    </section>
+
+    <section id="buttons" class="component-section">
+      <h2 class="section-title">Botones</h2>
+
+      <div class="component-showcase">
+        <button class="btn btn-primary">Botón Primario</button>
+        <button class="btn btn-secondary">Botón Secundario</button>
+        <button class="btn btn-outline">Botón Outline</button>
+      </div>
+
+      <h3 class="subsection-title">Estados</h3>
+      <div class="component-showcase">
+        <button class="btn btn-primary" disabled>Deshabilitado</button>
+        <button class="btn btn-primary btn-hover">Hover</button>
+      </div>
+
+      <h3 class="subsection-title">Tamaños</h3>
+      <div class="component-showcase">
+        <button class="btn btn-primary btn-sm">Pequeño</button>
+        <button class="btn btn-primary">Normal</button>
+        <button class="btn btn-primary btn-lg">Grande</button>
+      </div>
+    </section>
+
+    <section id="forms" class="component-section">
+      <h2 class="section-title">Formularios</h2>
+
+      <div class="form-group">
+        <label for="text-input">Input de Texto</label>
+        <input type="text" id="text-input" class="form-control" placeholder="Escribe aquí...">
+      </div>
+
+      <div class="form-group">
+        <label for="text-input-error">Input con Error</label>
+        <input type="text" id="text-input-error" class="form-control is-invalid" placeholder="Campo con error">
+      </div>
+
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="checkbox1">
+          <label class="form-check-label" for="checkbox1">Checkbox</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="radio-group" id="radio1">
+          <label class="form-check-label" for="radio1">Radio Button</label>
+        </div>
+      </div>
+    </section>
+
+    <section id="components" class="component-section">
+      <h2 class="section-title">Componentes</h2>
+
+      <h3 class="subsection-title">Tarjetas</h3>
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título de la Tarjeta</h4>
+          <p class="card-text">Este es un texto de ejemplo para el cuerpo de la tarjeta. Aquí se puede añadir más contenido.</p>
+          <a href="#" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+
+      <h3 class="subsection-title">Alertas</h3>
+      <div class="alert alert-success">
+        <strong>Éxito:</strong> Esta es una alerta de éxito.
+      </div>
+      <div class="alert alert-warning">
+        <strong>Aviso:</strong> Esta es una alerta de advertencia.
+      </div>
+      <div class="alert alert-error">
+        <strong>Error:</strong> Esta es una alerta de error.
+      </div>
+
+      <h3 class="subsection-title">Modal</h3>
+      <button class="btn btn-primary" id="open-modal-btn">Abrir Modal</button>
+    </section>
+
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" id="close-modal-btn">&times;</span>
+      <h4 class="modal-title">Título del Modal</h4>
+      <p>Este es el contenido del modal. Puede contener texto, imágenes o cualquier otro elemento HTML.</p>
+      <button class="btn btn-primary">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+
+</body>
+</html>
